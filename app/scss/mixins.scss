@@ -1,0 +1,18 @@
+@mixin flex-a{
+    display: flex;
+    align-items: center;
+}
+@mixin flex-a-j{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin primary-hover{
+    transition: all .3s ease-in-out;
+    background-color: $primary;
+    color: $color-description;
+    &:hover{
+        color: #D4D4D8;
+        background-color: $primary-hover;
+    }
+}

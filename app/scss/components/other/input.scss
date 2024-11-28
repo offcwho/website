@@ -1,0 +1,21 @@
+.input{
+    width: 100%;
+    display: flex;
+    &__input{
+        padding: 10px 15px;
+        width: 100%;
+        color: $color-description;
+        &:focus-visible{
+            outline: none;
+        }
+        &--bordered{
+            border: 1px solid #ccc;
+            border-radius: $r-md;
+        }
+    }
+}
+
+input{
+    background-color: transparent;
+    border: none;
+}

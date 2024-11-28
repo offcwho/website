@@ -1,0 +1,58 @@
+body{
+    overflow: hidden;
+}
+.form{
+    &__form{
+        animation-duration: 1s;
+        animation-name: fadeIn;
+        max-width: 300px;
+        width: 100%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__button{
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: $r-md;
+        @include primary-hover;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__error{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        text-align: center;
+        padding-block: 10px;
+        background-color: $error;
+        animation-duration: 1s;
+        animation-name: error;
+    }
+    &__success{
+        background-color: $success;
+    }
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+        scale: 0.9;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+@keyframes error {
+    from {
+        bottom: -10%;
+    }
+    to {
+        bottom: 0;
+    }
+}

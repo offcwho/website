@@ -1,0 +1,45 @@
+
+//Colors
+    $color-title: #FFFFFF;
+    $color-description: #F4F4F5;
+
+    $primary: #920B3A;
+    $primary-hover: #610726;
+
+    $color-border: #FEE7EF;
+
+    $color-hover: #d2d2d2;
+    
+    $background: #000000;
+
+    $color-item: #18181B;
+
+    $error: red;
+    $success: green;
+
+//Radius
+    $r-md: 10px;
+    $r-sm: 12px;
+
+
+$container-width: 1440px;
+
+body{
+    background-color: $background;
+    color: $color-title;
+    font-family: var(--font-ubuntu-regular);
+}
+
+.container{
+    width: 100%;
+    max-width:  $container-width;
+    margin-inline: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: $color-title;
+}
+
+p{
+    color: $color-description;
+}

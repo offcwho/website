@@ -1,0 +1,30 @@
+.header{
+    position: fixed;
+    width: 100vw;
+    &__container{
+        padding-block: 15px;
+        display: flex;
+    }
+    &__navbar{
+        width: 100%;
+        @include flex-a;
+    }
+    &__link{
+        transition: all .3s ease-in-out;
+        &:hover{
+            color: $color-hover;
+        }
+    }
+    &__menu{
+        display: flex;
+        margin-inline: auto;
+    }
+    &__list{
+        display: flex;
+    }
+    &__button{
+        padding: 10px 25px;
+        border-radius: $r-md;
+        @include primary-hover;
+    }
+}
